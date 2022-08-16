@@ -1,0 +1,14 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.github.augtons.clionplugin</id>
+    <name>ClionPlugin</name>
+    <vendor>augtons</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow factoryClass="com.github.augtons.serialberry.window.SerialWindowFactory"
+                    id="SerialBerry" canCloseContents="true"
+            />
+    </extensions>
+</idea-plugin>
